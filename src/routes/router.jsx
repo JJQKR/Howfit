@@ -25,23 +25,25 @@ const router = createBrowserRouter([
     element: <DefaultLayout />,
     children: [
       { path: "/", element: <Home /> },
+
+      { path: "/login", element: <Login /> },
+      { path: "/signup", element: <Signup /> },
+      { path: "/upload", element: <Upload /> },
+      { path: "/mypage", element: <MyPage /> },
+      {
+        page: "/userpage",
+        element: <UserPage />,
+        loader: async () => await isAuthenticated(),
+      },
+      {
+        page: "/detail/:detailId",
+        element: <Detail />,
+        loader: async () => await isAuthenticated(),
+      },
       {
         element: <Protected />,
         children: [
-          { path: "/login", element: <Login /> },
-          { path: "/signup", element: <Signup /> },
-          { path: "/upload", element: <Upload /> },
-          { path: "/mypage", element: <MyPage /> },
-          {
-            page: "/userpage",
-            element: <UserPage />,
-            loader: async () => await isAuthenticated(),
-          },
-          {
-            page: "/detail/:detailId",
-            element: <Detail />,
-            loader: async () => await isAuthenticated(),
-          },
+          //나중에 여기 채우세요!
         ],
       },
     ],
