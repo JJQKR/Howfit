@@ -26,12 +26,13 @@ export default function DefaultLayout() {
         </NavItem>
         <div className="align-center flex">
           <span className="mx-2 flex items-center text-white">
-            호로롤
+            누구님 반갑습ㄴ니다
             {/* {nickname ? `${nickname}님 반갑습니다` : 'Loading...'} */}
           </span>
-          <Link to="/survey" className="mr-3">
-            💡 맞춤 추천
+          <Link to="/signup" className="mr-3">
+           회원가입
           </Link>
+          {/* 메인페이지에서만 보이고 로그인 후에 사라지게 */}
           <NavItem to="/mypage">마이페이지</NavItem>
           <button
             className="mx-3 rounded-md border bg-gray-100 px-3 text-black no-underline hover:underline"
