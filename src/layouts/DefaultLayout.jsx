@@ -11,7 +11,7 @@ function NavBar({ children }) {
 
 function NavItem({ to, children }) {
   return (
-    <Link to={to} className="left-0 right-0 top-0 mx-2 text-white no-underline hover:underline">
+    <Link to={to} className="left-0 right-0 top-0 mx-4 text-white no-underline hover:underline">
       {children}
     </Link>
   );
@@ -22,7 +22,7 @@ export default function DefaultLayout() {
     <>
        <NavBar>
         <NavItem to="/">
-          <img className="size-14" src="img/12logo.png" alt="logo_image" />
+          <img className="size-14 " src="img/logo_fit.png" alt="logo_image" />
         </NavItem>
         <div className="align-center flex">
           <span className="mx-2 flex items-center text-white">
