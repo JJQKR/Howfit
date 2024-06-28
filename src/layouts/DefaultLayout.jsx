@@ -26,7 +26,7 @@ export default function DefaultLayout() {
         </NavItem>
         <div className="align-center flex">
           <span className="mx-2 flex items-center text-white">
-            누구님 반갑습ㄴ니다
+            누구님 반갑습ㄴ니다!!!!!!!!!!!!!!!!!
             {/* {nickname ? `${nickname}님 반갑습니다` : 'Loading...'} */}
           </span>
           <Link to="/signup" className="mr-3">

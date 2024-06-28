@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <>
       <div>Home</div>
-      <Postlist />
+      <p>왜 안뜨는데</p>
+     
     </>
   );
 }

@@ -11,7 +11,7 @@ import UserPage from "../pages/UserPage";
 import { isAuthenticated } from "./helpers";
 import Detail from "../pages/Detail";
 import InBody from "../pages/InBody";
-
+import Survey from "../pages/Survey";
 
 const router = createBrowserRouter([
   {
@@ -20,9 +20,10 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/signup", element: <Signup /> },
+      { path: "/inbody", element: <InBody /> },
+      { path: "/survey", element: <Survey />},
       { path: "/upload", element: <Upload /> },
       { path: "/mypage", element: <MyPage /> },
-      { path: "/inbody", element: <InBody /> },
       {
         path: "/userpage",
         element: <UserPage />,
